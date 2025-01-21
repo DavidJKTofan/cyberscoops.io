@@ -1,5 +1,6 @@
 import { resources } from "../data/resources.js";
 import { updateStats } from "../main.js";
+import { getIcon } from "./icons.js";
 
 /**
  * Creates HTML for a single resource card
@@ -11,20 +12,22 @@ export function createResourceCard(resource) {
         <div class="resource-card" data-category="${resource.category}">
             <div>
                 <h3>
-                    <i data-feather="${resource.icon}"></i>
+                    ${getIcon(resource.icon)}
                     ${resource.name}
                 </h3>
                 <p class="resource-description">${resource.description}</p>
                 <div class="resource-meta">
                     <span>
-                        <i data-feather="tag" size="14"></i>
+                        ${getIcon("tag", 14)}
                         ${resource.category}
                     </span>
                 </div>
             </div>
-            <a href="${resource.url}" class="resource-link" target="_blank" rel="noopener noreferrer external">
+            <a href="${
+              resource.url
+            }" class="resource-link" target="_blank" rel="noopener noreferrer">
                 Visit Resource
-                <i data-feather="external-link" size="14"></i>
+                ${getIcon("externalLink", 14)}
             </a>
         </div>
     `;
@@ -40,11 +43,10 @@ export function renderResources(category = "all") {
   // Show loading state
   grid.innerHTML = `
         <div class="loading">
-            <i data-feather="loader" class="loading-spinner"></i>
+            ${getIcon("loader")}
             <p>Loading resources...</p>
         </div>
     `;
-  feather.replace();
 
   // Simulate loading for smoother transitions
   setTimeout(() => {
@@ -54,7 +56,6 @@ export function renderResources(category = "all") {
         : resources.filter((r) => r.category === category);
 
     grid.innerHTML = filteredResources.map(createResourceCard).join("");
-    feather.replace();
     updateStats(category);
   }, 300);
 }
