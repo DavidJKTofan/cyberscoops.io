@@ -1,16 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <title>CyberScoops.io</title>
-</head>
-<body>
-  <div id="content">
-    <h1>Welcome to CyberScoops.io</h1>
-    <p>We are currently working on our website and will soon publish content about cybersecurity.</p>
-    <p>Thank you for your patience!</p>
-  </div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CyberScoops.io - Cybersecurity Resources Hub</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>CyberScoops.io</h1>
+      <p>Your curated hub for cybersecurity news, resources, and insights</p>
+    </header>
+
+    <main>
+      <div class="filters">
+        <button class="filter-btn active" data-category="all">
+          All Resources
+        </button>
+        <button class="filter-btn" data-category="news">News Sites</button>
+        <button class="filter-btn" data-category="youtube">
+          YouTube Channels
+        </button>
+        <button class="filter-btn" data-category="blogs">Tech Blogs</button>
+      </div>
+
+      <div class="stats" id="statsCounter">Showing all resources</div>
+
+      <div class="resources-grid" id="resourcesGrid">
+        <div class="loading">
+          <i data-feather="loader" class="loading-spinner"></i>
+          <p>Loading resources...</p>
+        </div>
+      </div>
+    </main>
+
+    <section class="disclaimer">
+      <p>
+        Disclaimer: CyberScoops.io is a community-driven platform. While we aim
+        to provide accurate and up-to-date resources, we do not take
+        responsibility for the content of external links or the information
+        provided therein. Always exercise caution and verify information
+        independently.
+      </p>
+    </section>
+
+    <footer>
+      <p>
+        Last updated: January 2025 • Made with 🛡️ for the cybersecurity
+        community
+      </p>
+    </footer>
+
+    <script type="module" src="assets/js/main.js"></script>
+  </body>
 </html>
