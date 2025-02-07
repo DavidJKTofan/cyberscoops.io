@@ -87,4 +87,11 @@ export const resources = [
     icon: "globe",
     description: "Latest news on cybersecurity policy and threats",
   },
+  {
+    name: "c/side Blog",
+    url: "https://cside.dev/blog",
+    category: "blogs",
+    icon: "book-open",
+    description: "Industry News, Insights and Resources with focus on 3rd party scripts",
+  },
 ];
