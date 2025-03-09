@@ -94,4 +94,25 @@ export const resources = [
     icon: "book-open",
     description: "Industry News, Insights and Resources with focus on 3rd party scripts",
   },
+  {
+    name: "404 Media",
+    url: "https://www.404media.co/",
+    category: "news",
+    icon: "globe",
+    description: "Exploring the ways technology is shaping-and is shaped by-our world",
+  },
+  {
+    name: "TorrentFreak (TF)",
+    url: "https://torrentfreak.com/",
+    category: "news",
+    icon: "globe",
+    description: "Latest news about copyright, privacy, and everything related to filesharing",
+  },
+  {
+    name: "Cybernews",
+    url: "https://cybernews.com/",
+    category: "news",
+    icon: "globe",
+    description: "Debunk cyber by research, testing and data",
+  },
 ];
