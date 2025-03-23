@@ -115,4 +115,11 @@ export const resources = [
     icon: "globe",
     description: "Debunk cyber by research, testing and data",
   },
+  {
+    name: "David Bombal",
+    url: "https://www.youtube.com/@davidbombal/videos",
+    category: "youtube",
+    icon: "youtube",
+    description: "Linux, Python, Ethical Hacking, Networking, CCNA, Virtualization and other IT related topics.",
+  },
 ];
