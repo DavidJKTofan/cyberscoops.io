@@ -122,4 +122,11 @@ export const resources = [
     icon: "youtube",
     description: "Linux, Python, Ethical Hacking, Networking, CCNA, Virtualization and other IT related topics.",
   },
+  {
+    name: "LiveOverflow",
+    url: "https://www.youtube.com/@LiveOverflow/videos",
+    category: "youtube",
+    icon: "youtube",
+    description: "Videos about various IT security topics and participating in hacking competitions."
+  }
 ];
