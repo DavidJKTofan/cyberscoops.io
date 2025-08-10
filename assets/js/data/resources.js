@@ -128,5 +128,19 @@ export const resources = [
     category: "youtube",
     icon: "youtube",
     description: "Videos about various IT security topics and participating in hacking competitions."
+  },
+  {
+    name: "Null Byte",
+    url: "https://www.youtube.com/@NullByteWHT/videos",
+    category: "youtube",
+    icon: "youtube",
+    description: "Videos for aspiring ethical hackers, computer scientists, and the infosec community.",
+  },
+  {
+    name: "HackerSploit",
+    url: "https://www.youtube.com/HackerSploit/videos",
+    category: "youtube",
+    icon: "youtube",
+    description: "Cybersecurity training, ethical hacking, and penetration testing tutorials.",
   }
 ];
