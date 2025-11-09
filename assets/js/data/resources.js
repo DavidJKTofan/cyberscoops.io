@@ -92,21 +92,24 @@ export const resources = [
     url: "https://cside.dev/blog",
     category: "blogs",
     icon: "book-open",
-    description: "Industry News, Insights and Resources with focus on 3rd party scripts",
+    description:
+      "Industry News, Insights and Resources with focus on 3rd party scripts",
   },
   {
     name: "404 Media",
     url: "https://www.404media.co/",
     category: "news",
     icon: "globe",
-    description: "Exploring the ways technology is shaping-and is shaped by-our world",
+    description:
+      "Exploring the ways technology is shaping-and is shaped by-our world",
   },
   {
     name: "TorrentFreak (TF)",
     url: "https://torrentfreak.com/",
     category: "news",
     icon: "globe",
-    description: "Latest news about copyright, privacy, and everything related to filesharing",
+    description:
+      "Latest news about copyright, privacy, and everything related to filesharing",
   },
   {
     name: "Cybernews",
@@ -120,27 +123,56 @@ export const resources = [
     url: "https://www.youtube.com/@davidbombal/videos",
     category: "youtube",
     icon: "youtube",
-    description: "Linux, Python, Ethical Hacking, Networking, CCNA, Virtualization and other IT related topics.",
+    description:
+      "Linux, Python, Ethical Hacking, Networking, CCNA, Virtualization and other IT related topics.",
   },
   {
     name: "LiveOverflow",
     url: "https://www.youtube.com/@LiveOverflow/videos",
     category: "youtube",
     icon: "youtube",
-    description: "Videos about various IT security topics and participating in hacking competitions."
+    description:
+      "Videos about various IT security topics and participating in hacking competitions.",
   },
   {
     name: "Null Byte",
     url: "https://www.youtube.com/@NullByteWHT/videos",
     category: "youtube",
     icon: "youtube",
-    description: "Videos for aspiring ethical hackers, computer scientists, and the infosec community.",
+    description:
+      "Videos for aspiring ethical hackers, computer scientists, and the infosec community.",
   },
   {
     name: "HackerSploit",
     url: "https://www.youtube.com/HackerSploit/videos",
     category: "youtube",
     icon: "youtube",
-    description: "Cybersecurity training, ethical hacking, and penetration testing tutorials.",
-  }
+    description:
+      "Cybersecurity training, ethical hacking, and penetration testing tutorials.",
+  },
+  {
+    name: "Cyber Leaders Podcast",
+    url: "https://www.sans.org/podcasts/cyber-leaders",
+    category: "podcast",
+    icon: "podcast",
+    description:
+      "Unfiltered journey into the minds of the leaders shaping the future of cybersecurity.",
+  },
+  {
+    name: "Security Now",
+    url: "https://www.youtube.com/@securityNow/videos",
+    category: "podcast",
+    icon: "podcast",
+    description:
+      "Latest cybercrime and hacking stories, offering a deep understanding of what's happening and how to protect yourself and your business.",
+  },
+  ,
+  {
+    name: "Darknet Diaries",
+    url: "https://darknetdiaries.com/",
+    category: "podcast",
+    icon: "podcast",
+    description:
+      "Podcast about hackers, breaches, shadow government activity, hacktivism, cybercrime, and all the things that dwell on the hidden parts of the network.",
+  },
 ];

@@ -46,7 +46,8 @@ function formatCategory(category) {
   const categoryMap = {
     'news': 'News Sites',
     'youtube': 'YouTube',
-    'blogs': 'Tech Blogs'
+    'blogs': 'Tech Blogs',
+    'podcast': 'Podcasts'
   };
   return categoryMap[category] || category;
 }

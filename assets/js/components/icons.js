@@ -8,6 +8,10 @@ export const icons = {
 
   youtube: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>`,
 
+  podcast: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="10" y="3" width="4" height="8" rx="2"/><path d="M8 11a6 6 0 0 0 8 0"/><path d="M6 13a9 9 0 0 0 12 0"/><path d="M12 15v3"/><path d="M9 21h6"/></svg>`,
+  
+  radio: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="12" rx="2"/><line x1="6" y1="3" x2="10" y2="7"/><circle cx="7.5" cy="12" r="3"/><circle cx="17" cy="12" r="1.5"/><path d="M11 9h6v6h-6"/></svg>`,
+
   bookOpen: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>`,
 
   cloud: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>`,
@@ -34,11 +38,11 @@ export const icons = {
 
   blogs: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>`,
 
-  'book-open': `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>`,
+  "book-open": `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>`,
 
-  'trending-up': `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>`,
+  "trending-up": `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>`,
 
-  'external-link': `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>`
+  "external-link": `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>`,
 };
 
 /**
@@ -48,22 +52,22 @@ export const icons = {
  * @param {string} title - Optional title for accessibility
  * @returns {string} SVG string for the icon
  */
-export function getIcon(name, size = 24, title = '') {
-  if (!name || typeof name !== 'string') {
-    console.warn('getIcon: Invalid icon name provided:', name);
-    return getIcon('globe', size, title);
+export function getIcon(name, size = 24, title = "") {
+  if (!name || typeof name !== "string") {
+    console.warn("getIcon: Invalid icon name provided:", name);
+    return getIcon("globe", size, title);
   }
 
   // Normalize icon name (handle camelCase, kebab-case, etc.)
   const normalizedName = name
     .toLowerCase()
-    .replace(/([A-Z])/g, '-$1')
-    .replace(/^-/, '')
-    .replace(/_/g, '-');
+    .replace(/([A-Z])/g, "-$1")
+    .replace(/^-/, "")
+    .replace(/_/g, "-");
 
   // Try to find the icon
   let icon = icons[normalizedName] || icons[name] || icons.globe;
-  
+
   // Replace size attributes
   icon = icon
     .replace(/width="24"/g, `width="${size}"`)
@@ -92,7 +96,7 @@ export function getAvailableIcons() {
  * @param {string} color - Custom color (CSS value)
  * @returns {string} SVG string with custom styling
  */
-export function createThemedIcon(name, size = 24, color = 'currentColor') {
+export function createThemedIcon(name, size = 24, color = "currentColor") {
   let icon = getIcon(name, size);
   return icon.replace('stroke="currentColor"', `stroke="${color}"`);
 }
@@ -104,8 +108,8 @@ export function createThemedIcon(name, size = 24, color = 'currentColor') {
  * @param {string} animation - CSS animation name
  * @returns {string} SVG string with animation
  */
-export function createAnimatedIcon(name, size = 24, animation = 'spin') {
+export function createAnimatedIcon(name, size = 24, animation = "spin") {
   let icon = getIcon(name, size);
   const animationStyle = `style="animation: ${animation} 1s linear infinite;"`;
-  return icon.replace('<svg', `<svg ${animationStyle}`);
+  return icon.replace("<svg", `<svg ${animationStyle}`);
 }

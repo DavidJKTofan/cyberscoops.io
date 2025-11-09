@@ -111,7 +111,7 @@ function updateURLHash(category) {
  */
 export function initFiltersFromURL() {
   const hash = window.location.hash.slice(1);
-  const validCategories = ['news', 'youtube', 'blogs'];
+  const validCategories = ['news', 'youtube', 'blogs', 'podcast'];
   
   if (hash && validCategories.includes(hash)) {
     const targetBtn = document.querySelector(`[data-category="${hash}"]`);

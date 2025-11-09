@@ -39,7 +39,8 @@ export function updateFilterCounts() {
     all: resources.length,
     news: resources.filter(r => r.category === "news").length,
     youtube: resources.filter(r => r.category === "youtube").length,
-    blogs: resources.filter(r => r.category === "blogs").length
+    blogs: resources.filter(r => r.category === "blogs").length,
+    podcast: resources.filter(r => r.category === "podcast").length,
   };
 
   Object.entries(categoryCounts).forEach(([category, count]) => {
