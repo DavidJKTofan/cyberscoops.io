@@ -166,7 +166,6 @@ export const resources = [
     description:
       "Latest cybercrime and hacking stories, offering a deep understanding of what's happening and how to protect yourself and your business.",
   },
-  ,
   {
     name: "Darknet Diaries",
     url: "https://darknetdiaries.com/",

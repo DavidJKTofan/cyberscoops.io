@@ -1,6 +1,6 @@
 import { resources } from "./data/resources.js";
 import { renderResources } from "./components/cards.js";
-import { setupFilters } from "./components/filters.js";
+import { setupFilters, initFiltersFromURL } from "./components/filters.js";
 import { initTheme } from "./components/theme.js";
 
 // Wait for DOM to be fully loaded
@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Setup filter functionality
   setupFilters();
+  initFiltersFromURL();
 
   // Update stats counter and filter counts
   updateStats("all");

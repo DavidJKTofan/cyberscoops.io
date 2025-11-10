@@ -100,9 +100,13 @@ function navigateFilters(currentBtn, forward) {
  * @param {string} category - Selected category
  */
 function updateURLHash(category) {
-  const newHash = category === 'all' ? '' : `#${category}`;
-  if (window.location.hash !== newHash) {
-    history.replaceState(null, null, newHash || window.location.pathname);
+  try {
+    const newHash = category === 'all' ? '' : `#${category}`;
+    if (window.location.hash !== newHash) {
+      history.replaceState(null, null, newHash || window.location.pathname);
+    }
+  } catch (error) {
+    console.warn("Could not update URL hash:", error);
   }
 }
 
