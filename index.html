@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header>
       <div class="header-content">
         <div class="header-text">
@@ -41,33 +42,42 @@
       </div>
     </header>
 
-    <main>
-      <div class="filters">
-        <button class="filter-btn active" data-category="all">
+    <main id="main-content">
+      <div class="search-container">
+        <div class="search-wrapper">
+          <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          </svg>
+          <input type="text" id="resourceSearch" placeholder="Search resources by name or description..." aria-label="Search resources">
+        </div>
+      </div>
+
+      <div class="filters" role="tablist" aria-label="Resource categories">
+        <button class="filter-btn active" data-category="all" role="tab" aria-selected="true" aria-controls="resourcesGrid">
           <span class="filter-text">All Resources</span>
           <span class="filter-count" id="filter-all-count">0</span>
         </button>
-        <button class="filter-btn" data-category="news">
+        <button class="filter-btn" data-category="news" role="tab" aria-selected="false" aria-controls="resourcesGrid">
           <span class="filter-text">News Sites</span>
           <span class="filter-count" id="filter-news-count">0</span>
         </button>
-        <button class="filter-btn" data-category="youtube">
+        <button class="filter-btn" data-category="youtube" role="tab" aria-selected="false" aria-controls="resourcesGrid">
           <span class="filter-text">YouTube</span>
           <span class="filter-count" id="filter-youtube-count">0</span>
         </button>
-        <button class="filter-btn" data-category="blogs">
+        <button class="filter-btn" data-category="blogs" role="tab" aria-selected="false" aria-controls="resourcesGrid">
           <span class="filter-text">Tech Blogs</span>
           <span class="filter-count" id="filter-blogs-count">0</span>
         </button>
-        <button class="filter-btn" data-category="podcast">
+        <button class="filter-btn" data-category="podcast" role="tab" aria-selected="false" aria-controls="resourcesGrid">
           <span class="filter-text">Podcasts</span>
           <span class="filter-count" id="filter-podcast-count">0</span>
         </button>
       </div>
 
-      <div class="stats" id="statsCounter">Loading resources...</div>
+      <div class="stats" id="statsCounter" aria-live="polite">Loading resources...</div>
 
-      <div class="resources-grid" id="resourcesGrid">
+      <div class="resources-grid" id="resourcesGrid" role="region" aria-label="Resources list">
         <div class="loading">
           <div class="loading-spinner"></div>
           <p>Loading resources...</p>
@@ -78,7 +88,7 @@
     <section class="disclaimer">
       <div class="disclaimer-content">
         <p>
-          <strong>Disclaimer:</strong> CyberScoops.io is a community-driven and <a href="https://github.com/DavidJKTofan/cyberscoops.io" target="_blank" rel="external noopener">open source</a> platform. While we aim
+          <strong>Disclaimer:</strong> CyberScoops.io is a community-driven and <a href="https://github.com/DavidJKTofan/cyberscoops.io" target="_blank" rel="noopener noreferrer">open source</a> platform. While we aim
           to provide accurate and up-to-date resources, we do not take
           responsibility for the content of external links or the information
           provided therein. Always exercise caution and verify information
@@ -90,8 +100,11 @@
     <footer>
       <div class="footer-content">
         <p>
-          Last updated: August 2025 • Made with 🛡️ for the cybersecurity community
+          Last updated: March 2026 • Made with 🛡️ for the cybersecurity community
         </p>
+        <div class="footer-links">
+          <a href="https://github.com/DavidJKTofan/cyberscoops.io" target="_blank" rel="noopener noreferrer">Contribute on GitHub</a>
+        </div>
       </div>
     </footer>
 

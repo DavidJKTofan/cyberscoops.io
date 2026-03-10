@@ -65,7 +65,9 @@ function handleFilterChange(clickedBtn) {
   
   // Render filtered resources
   const category = clickedBtn.dataset.category;
-  renderResources(category);
+  const searchInput = document.getElementById("resourceSearch");
+  const searchTerm = searchInput ? searchInput.value : "";
+  renderResources(category, searchTerm);
   
   // Update URL hash for bookmarking (optional)
   updateURLHash(category);

@@ -174,4 +174,20 @@ export const resources = [
     description:
       "Podcast about hackers, breaches, shadow government activity, hacktivism, cybercrime, and all the things that dwell on the hidden parts of the network.",
   },
+  {
+    name: "TechLinked",
+    url: "https://www.youtube.com/@techlinked/videos",
+    category: "youtube",
+    icon: "youtube",
+    description:
+      "Fast-paced tech news coverage, including security updates and hardware releases.",
+  },
+  {
+    name: "NetworkChuck",
+    url: "https://www.youtube.com/@NetworkChuck/videos",
+    category: "youtube",
+    icon: "youtube",
+    description:
+      "Highly engaging tutorials on networking, security, Linux, and cloud computing.",
+  },
 ];

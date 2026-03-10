@@ -55,8 +55,9 @@ function formatCategory(category) {
 /**
  * Renders resources to the grid with enhanced loading states and animations
  * @param {string} category - Category to filter by (default: 'all')
+ * @param {string} searchTerm - Search term to filter by (default: '')
  */
-export function renderResources(category = "all") {
+export function renderResources(category = "all", searchTerm = "") {
   const grid = document.getElementById("resourcesGrid");
   if (!grid) return;
 
@@ -70,17 +71,26 @@ export function renderResources(category = "all") {
 
   // Simulate loading for smoother transitions and better UX
   setTimeout(() => {
-    const filteredResources =
+    let filteredResources =
       category === "all"
         ? resources
         : resources.filter((r) => r.category === category);
 
+    if (searchTerm) {
+      const term = searchTerm.toLowerCase();
+      filteredResources = filteredResources.filter(
+        (r) =>
+          r.name.toLowerCase().includes(term) ||
+          r.description.toLowerCase().includes(term)
+      );
+    }
+
     if (filteredResources.length === 0) {
       grid.innerHTML = `
-        <div class="no-results" style="grid-column: 1 / -1; text-align: center; padding: 3rem 1rem; color: var(--text-muted);">
-          <div style="font-size: 3rem; margin-bottom: 1rem; opacity: 0.5;">🔍</div>
-          <h3 style="margin-bottom: 0.5rem; color: var(--text-secondary);">No resources found</h3>
-          <p>Try selecting a different category or check back later for updates.</p>
+        <div class="no-results">
+          <span class="no-results-icon" aria-hidden="true">🔍</span>
+          <h3>No resources found</h3>
+          <p>${searchTerm ? `No results for "${searchTerm}"` : 'Try selecting a different category or check back later for updates.'}</p>
         </div>
       `;
     } else {
@@ -124,10 +134,10 @@ export function renderResources(category = "all") {
       }, 1000);
     }
 
-    updateStats(category);
+    updateStats(category, searchTerm, filteredResources.length);
     
     // Announce to screen readers
-    const announcement = `${filteredResources.length} resources loaded for ${category === 'all' ? 'all categories' : formatCategory(category)}`;
+    const announcement = `${filteredResources.length} resources loaded for ${category === 'all' ? 'all categories' : formatCategory(category)}${searchTerm ? ` searching for "${searchTerm}"` : ''}`;
     announceToScreenReader(announcement);
   }, 300);
 }
