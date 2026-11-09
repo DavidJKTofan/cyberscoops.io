@@ -1,0 +1,21 @@
+{
+	"name": "cyberscoops-io",
+	"compatibility_date": "2026-11-09",
+	"observability": { "enabled": true },
+
+	// Static site (migrated from Cloudflare Pages): no Worker script, every request is
+	// served from static assets. Repository files that are not part of the site are
+	// excluded in .assetsignore.
+	"assets": {
+		"directory": ".",
+		"html_handling": "auto-trailing-slash"
+	},
+
+	// Public site. workers.dev stays on so the site can be tested before the domain moves;
+	// Preview URLs are off because Workers Builds only deploys the main branch.
+	"workers_dev": true,
+	"preview_urls": false
+
+	// Once cyberscoops.io is Active in the DavidT Personal account, add the Custom Domain:
+	// , "routes": [{ "pattern": "cyberscoops.io", "custom_domain": true }]
+}
